@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>NeveBianca</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="menu">
+            <div class="line-list" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-bg" id="js-menu-bg"></div> 
+            <div class="header">
+                <h1 class="header_logo"><a href="index.html"><img src="img/logo.png" alt="Nevebianca" width="167" height="20"><span>#アイシングクッキー教室</span></a></h1>
+                <nav class="global-nav">
+                <ul class="link-list">
+                   <li class="menu_lesson"><a href="lesson.html">Lesson</a></li>
+                   <li class="menu_gallery"><a href="gallery.html">Gallery</a></li>
+                   <li class="menu_flow"><a href="index.html#flow_anchor">Flow</a></li>
+                   <li class="menu_about"><a href="index.html#about_anchor">About</a></li>
+                   <li class="menu_contact"><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="https://www.instagram.com/neve_bianca_cookie" target="_blank" rel="noopener noreferrer"><img src="img/instagram_icon.png" alt="インスタグラムアイコン" width="30" height="30"></a>
+                </nav>
+            </div>
+        </section><!--header-->
+        
+        
+        
+        <section class="lesson lesson_details">
+            <h2 class="common_title" id="lesson_anchor">Lesson</h2>
+            <div class="lesson_box">
+                <p class="box_title lesson_subtitle">＜レッスン共通事項＞</p>
+                <div class="lesson_text lesson_details_text">
+                    <ul class="lesson_details_contents">
+                        <li>■開催時間</li>
+                        <li>■場所</li>
+                    </ul>
+                    <ul class="lesson_details_contents">
+                        <li>平日10:00〜13:00</li>
+                        <li>東京都杉並区　講師自宅</li>
+                    </ul>
+                    <ul class="lesson_details_responsive">
+                        <li>■開催時間</li>
+                        <li>　平日10:00〜13:00</li>
+                        <li>■場所</li>
+                        <li>　東京都杉並区<br class="br-sp">　講師自宅</li>
+                    </ul>
+                </div>
+            </div>
+            <p>レッスン料金は内容によって変わりますので、<br class="br-sp">下記をご確認ください。<br>（全て材料費、お持ち帰り用箱代込み）</p>
+
+            <div class="tab-wrap">
+                <input id="tab01" type="radio" name="tab" class="tab-switch" checked="checked"><label class="tab-label" for="tab01">体験レッスン</label>
+                <div class="tab-content">
+                    <h1 class="lesson_title">猫と気球のクッキー</h1>
+                    <div class="tab-content-photo">
+                        <div id="mainImg1">
+                            <img src="img/lesson_photo01.jpg" alt="体験レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg1">
+                                <li class="current"><img src="img/lesson_photo01.jpg" alt="体験レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo02.jpg" alt="体験レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　3,500円</h2>
+                                <h2>所要時間　　　約2時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input id="tab02" type="radio" name="tab" class="tab-switch"><label class="tab-label" for="tab02">季節のクッキー</label>
+                <div class="tab-content">
+                    <h1 class="lesson_title">1月　お正月のクッキー</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg2">
+                            <img src="img/lesson_photo_jan01.jpg" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg2">
+                                <li class="current"><img src="img/lesson_photo_jan01.jpg" alt="レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo_jan02.jpg" alt="レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">2月 バレンタインのクッキー</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg3">
+                            <img src="img/lesson_photo_feb01.jpg" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg3">
+                                <li class="current"><img src="img/lesson_photo_feb01.jpg" alt="レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo_feb02.jpg" alt="レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">3月　イースターのクッキー</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg4">
+                            <img src="img/lesson_photo_mar01.jpg" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg4">
+                                <li class="current"><img src="img/lesson_photo_mar01.jpg" alt="レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo_mar02.jpg" alt="レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">4月　春のクッキー</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg5">
+                            <img src="img/lesson_photo_apr01.jpg" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg5">
+                                <li class="current"><img src="img/lesson_photo_apr01.jpg" alt="レッスンの写真１"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">5月　coming soon...</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg6">
+                            <img src="img/lesson_photo_comingsoon.png" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <!--<ul id="subImg6">-->
+                            <!--    <li class="current"><img src="img/img/lesson_photo_comingsoon.png" alt="レッスンの写真１"></li>-->
+                            <!--</ul>-->
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">6月　coming soon...</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg7">
+                            <img src="img/lesson_photo_comingsoon.png" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <!--<ul id="subImg7">-->
+                            <!--    <li class="current"><img src="img/lesson_photo_apr01.jpg" alt="レッスンの写真１"></li>-->
+                            <!--</ul>-->
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">7月　coming soon...</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg8">
+                            <img src="img/lesson_photo_comingsoon.png" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <!--<ul id="subImg8">-->
+                            <!--    <li class="current"><img src="img/lesson_photo_apr01.jpg" alt="レッスンの写真１"></li>-->
+                            <!--</ul>-->
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">8月　夏のクッキー</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg9">
+                            <img src="img/lesson_photo_aug01.jpg" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg9">
+                                <li class="current"><img src="img/lesson_photo_aug01.jpg" alt="レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo_aug02.jpg" alt="レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">9月　coming soon...</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg10">
+                            <img src="img/lesson_photo_comingsoon.png" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <!--<ul id="subImg10">-->
+                            <!--    <li class="current"><img src="img/lesson_photo_apr01.jpg" alt="レッスンの写真１"></li>-->
+                            <!--</ul>-->
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">10月　ハロウィンのクッキー</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg11">
+                            <img src="img/lesson_photo_oct01.jpg" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg11">
+                                <li class="current"><img src="img/lesson_photo_oct01.jpg" alt="レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo_oct02.jpg" alt="レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">11月　coming soon...</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg12">
+                            <img src="img/lesson_photo_comingsoon.png" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <!--<ul id="subImg12">-->
+                            <!--    <li class="current"><img src="img/lesson_photo_apr01.jpg" alt="レッスンの写真１"></li>-->
+                            <!--</ul>-->
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="lesson_title">12月　クリスマスのクッキー</h1>
+                    <div class="tab-content-photo tab-content-season">
+                        <div id="mainImg13">
+                            <img src="img/lesson_photo_dec01.jpg" alt="レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg13">
+                                <li class="current"><img src="img/lesson_photo_dec01.jpg" alt="体験レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo_dec02.jpg" alt="レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input id="tab03" type="radio" name="tab" class="tab-switch"><label class="tab-label" for="tab03">誕生日のクッキー</label>
+                <div class="tab-content">
+                    <h1 class="lesson_title">ナンバークッキーと王冠</h1>
+                    <div class="tab-content-photo">
+                        <div id="mainImg14">
+                            <img src="img/lesson_photo_birthday01.jpg" alt="誕生日レッスンの写真１">
+                        </div>
+                        <div class="block">
+                            <ul id="subImg14">
+                                <li class="current"><img src="img/lesson_photo_birthday01.jpg" alt="体験レッスンの写真１"></li>
+                                <li><img src="img/lesson_photo_birthday02.jpg" alt="誕生日レッスンの写真２"></li>
+                            </ul>
+                            <div class="tab-content-text">
+                                <h2>レッスン料金　4,500円</h2>
+                                <h2>所要時間　　　約3時間</h2>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ex1" class="modal">
+                <p>皆さまに快適なレッスンを受講して頂けるよう、当教室ではレッスン規約を設けさせて頂いております。</p>
+                <p><span class="font_bold">以下の規約をよくお読み頂き、ご了承の上お申し込みください。</span><br>また、こちらの規約は随時追記・変更していく可能性がありますのでご注意ください。<br>なお、<span class="font_bold">ご予約成立の時点で、本規約に同意したものとみなします。</span></p>
+                <h1>■お申込み・お問合せについて</h1>
+                <p>○ご予約・お問い合わせは<br><a href="#">お申込みフォーム</a>よりお願いいたします。</p>
+                <p>ご予約は確定した方から<span class="font_red">先着順</span>とさせていただきます。<br>また、ご予約は準備の兼ね合いで<span class="font_bold">3日前</span>までとさせていただきます。</p>
+                <p>○ご返信は48時間以内にしておりますが、48時間経っても連絡がない場合は、お手数ですが再度ご連絡ください。</p>
+                <h1>■レッスン受講について</h1>
+                <p>○当教室は<span class="font_red">女性限定</span>とさせていただいております。<br>小さなお子様は安全に過ごせる環境が整っていない為、お子様連れでの受講は原則お断りさせて頂いております。<br>小学生以上で一緒にレッスンを受講する場合は、お子様も可能です。</p>
+                <p>○通常、1レッスン1名様ずつお申し込みいただいておりますが、小学生のお子様と保護者ペアに限り、レッスンをシェアすることを可能とします。<br>（例えば、1レッスン5枚のクッキーを仕上げるところをお二人で2枚と3枚に分けて行うこと。）<br>シェアする場合はその旨あらかじめお知らせください。</p>
+                <p>○講師には小学生の子供がおります。<br>レッスン日によっては子供が自宅にいる場合がありますことをご了承ください。（その際は予めご連絡致します）</p>
+                <p>○衛生面に配慮し、安全に召し上がって頂ける食材を使用しておりますが、<span class="font_red">レッスンで作った物を召し上がる際は自己責任でお願い致します。</span></p>
+                <p>○材料に小麦粉・卵・バターなどを使用しております。アレルギーをお持ちの方はご注意ください。</p>
+                <p>○レッスンで作ったご自身の作品はSNSなどご自由に投稿して頂いて構いません。その場合、<span class="font_bold">『Neve Bianca』</span>でのレッスン作品である旨の記載のご協力をお願いいたします。</p>
+                <p>○レッスンで作られた作品やレッスン風景の写真を当方SNSで掲載する場合がございます。SNSへ掲載不可の場合は、予めその旨お伝え下さい。（主に作品が中心で、人物が映る場合は顔が分からないよう掲載させて頂きます。）</p>
+                <p>○生徒様の個人情報は、ご案内・ご連絡以外の用途には使用致しませんのでご安心ください。</p>
+                <p>○当教室での貴重品の管理はご自身の責任でお願い致します。</p>
+                <h1>■教室への入室について</h1>
+                <p>○入室は<span class="font_red">10分前</span>からとなります。</p>
+                <p>○レッスン開始時間に遅れる場合は、事前にご連絡をお願いいたします。</p>
+                <h1>■注意事項</h1>
+                <p>○レッスンで使用したデザイン、レジュメの複写、模倣、転載はご遠慮ください。習った技術をレッスンされる場合はご自身でアレンジしてご使用ください。</p>
+                <p>○<span class="font_red">当教室の外観や場所が特定出来るような写真撮影はお断りさせて頂きます。</span><br>また、当教室の所在地の詳細、講師および他の生徒様の個人情報の口外・写真撮影などは一切禁止いたします。<br>レッスン中の写真・動画撮影は構いませんが、<span class="font_red">作品を作る工程のわかるお写真をSNSなどで公開することはご遠慮ください。</span></p>
+                <p>○教室内での物品の販売や営業行為、勧誘などは固くお断りします。</p>
+                <h1>■ご予約・キャンセル・お振替について</h1>
+                <p>○当教室は<span class="font_bold">少人数、完全予約制</span>です。<br>レッスンを希望される場合はお早めにお問い合わせください。</p>
+                <p>○<span class="font_bold">レッスンのお申込み後、ご予約確定の方に振込先のご案内を差し上げますので、5日以内にお振込ください。その際、振込手数料はご負担下さいますようお願い申し上げます。期日までにお振込がなかった場合は自動キャンセルと致します。受講ご希望の場合は再度お申込みをお願い致します。</span></p>
+                <p>○キャンセルやお振り替えは事前準備がありますので、3日前までにご連絡ください。<br>お子様やご本人様の病気など、<span class="font_bold">止むを得ず当日キャンセルされる場合、翌月末までに他レッスンへの振替をお願いします。</span>（振替レッスンで差額が生じた場合は差額分を再度ご入金ください。差額分が少ない場合は当日ご返金いたします。）<br>ご返金希望の場合は、振込手数料を差し引いた金額を入金させていただきます。</p>
+                <p>○基本的にキャンセル料はいただきませんが、<span class="font_bold">連絡なしでのキャンセルは全額キャンセル料としてご返金いたしかねます。</span>また今後一切のレッスンをお断りさせていただきますのでご了承ください。</p>
+                <p>○自然災害や講師側の都合によりレッスン中止となる場合は、ご相談によりレッスン日の振替あるいはレッスン代金のご返金で対応させて頂きます。</p>
+                <h1>■当教室へのアクセスについて</h1>
+                <p>○レッスンは講師自宅となります。<br>ご予約、ご入金完了後、詳しいアクセス方法をお知らせ致します。</p>
+                <p>○公共交通機関を使ってお越し頂く場合<br>◆西武新宿線 上井草駅から徒歩12分ほど<br>◆中央線・丸の内線 荻窪駅から<br>バス10分（バス停から徒歩1分ほど）<br>◆中央線 西荻窪駅から<br>バス10分（バス停から徒歩1分ほど）<br>◆西武池袋線石神井公園駅からバス15分（バス停から徒歩2分ほど)</p>
+                <p>○駐車場のご用意はありません。<br>近隣のコインパーキングをご利用ください。</p>
+                <p>ご不明な点がありましたら、お気軽にお問い合わせください。</p>
+                <div class="close_button"><a href="#" rel="modal:close">×閉じる</a></div>
+            </div>
+            <!-- Link to open the modal -->
+            <p>受講前に<a href="#ex1" rel="modal:open">レッスン規約</a>のご確認をお願いします</p>
+        </section><!--lesson_details-->
+        
+        
+        <footer id="contact">
+            <p>はじめての方もお気軽にご連絡ください！</p>
+            <img src="img/footer_arrow.png" alt="↓" width="304" height="9">
+            <h2 class="common_title">Contact</h2>
+                <div class="contact">
+                    <p>ご予約・お問い合わせは<br class="br-sp">お申込みフォームより<br class="br-sp">お願いいたします。</p>
+                    <div class="contact_information">
+                        <a href="#" class="contact_button common_button"><span class="button_text">お申込みフォーム</span><img src="img/arrow.png" alt="→" width="23" height="6"></a>
+                        <ul class="contact_icon common_contact">
+                            <li><a href="https://www.instagram.com/neve_bianca_cookie" target="_blank" rel="noopener noreferrer"><img src="img/instagram_icon.png" alt="インスタグラムアイコン" width="30" height="30"></a></li>
+                            <li><a href="https://www.instagram.com/neve_bianca_cookie" target="_blank" rel="noopener noreferrer">Instagram：neve_bianca_cookie</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                
+            <p class="copyright">©neve bianca cookie. All Rights Reserved.</p>
+            <a href="#" id="page-top">TOP</a>
+        </footer><!--footer-->
+    </div>
+
+<script>
+/* hamburger-menu*/
+$(function() {
+  function toggleNav() {
+    var body = document.body;
+    var hamburger = document.getElementById("js-hamburger");
+    var blackBg = document.getElementById("js-menu-bg");
+    // クリックしたときにクラス付与
+    hamburger.addEventListener("click", function() {
+      body.classList.toggle("nav-open");
+      hamburger.classList.toggle("active");
+    });
+    // クリックしたときにクラス付与
+    blackBg.addEventListener("click", function() {
+      body.classList.remove("nav-open");
+      hamburger.classList.remove("active");
+    });
+  }
+  toggleNav();
+});
+$('.link-list a[href]').on('click', function(event) {
+        $('.line-list').trigger('click');
+    });
+
+/*gallery*/ 
+$('.gallery').modaal({
+    type: 'image',
+    animation_speed: '500',
+    background: '#999',	// 背景の色を変更
+	overlay_opacity: '0.9',	// 背景のオーバーレイの透明度を変更
+});
+
+/* global Swiper */
+let mySwiper = new Swiper ('.swiper-container', {
+    effect: 'slide',   //スライドのアニメーション(slide,fade,cube,coverflow,flip)
+    loop: true,  //スライドをループ true / false
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 11,  //余白(px)
+    breakpoints: {
+        768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 11,  //余白(px)
+    },
+        980: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 22,  //余白(px)
+    }
+    },
+    
+    freeMode: true,   //スワイプ・スクロール
+    pagination: {  //ページネーションを表示
+        el: '.swiper-pagination',
+        type: 'bullets',   //表示形式(bullets,fraction,progressbar,custom)
+        clickable: true,  //アイコンをクリックすると対応するスライドに移動
+    },
+    navigation: {  //前後ナビゲーションボタンを表示
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+/*lesson image*/
+$(function(){
+    $('#subImg1 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg1 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg1 img').fadeOut(50, function() {
+            $('#mainImg1 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg2 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg2 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg2 img').fadeOut(50, function() {
+            $('#mainImg2 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg3 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg3 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg3 img').fadeOut(50, function() {
+            $('#mainImg3 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg4 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg4 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg4 img').fadeOut(50, function() {
+            $('#mainImg4 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg5 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg5 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg5 img').fadeOut(50, function() {
+            $('#mainImg5 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg5 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg5 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg5 img').fadeOut(50, function() {
+            $('#mainImg5 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg6 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg6 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg6 img').fadeOut(50, function() {
+            $('#mainImg6 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg7 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg7 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg7 img').fadeOut(50, function() {
+            $('#mainImg7 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg8 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg8 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg8 img').fadeOut(50, function() {
+            $('#mainImg8 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg9 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg9 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg9 img').fadeOut(50, function() {
+            $('#mainImg9 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg10 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg10 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg10 img').fadeOut(50, function() {
+            $('#mainImg10 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg11 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg11 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg11 img').fadeOut(50, function() {
+            $('#mainImg11 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg12 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg12 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg12 img').fadeOut(50, function() {
+            $('#mainImg12 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg13 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg13 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg13 img').fadeOut(50, function() {
+            $('#mainImg13 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+$('#subImg14 img').on('click',function(){
+        //mainに切り替えるimgのsrc取得
+        img = $(this).attr('src');
+        //currentクラス付け替え
+        $('#subImg14 li').removeClass('current');
+        $(this).parent().addClass('current');
+        //fadeOutできたらsrc変更してfadeIn
+        $('#mainImg14 img').fadeOut(50, function() {
+            $('#mainImg14 img').attr('src', img).on('load', function() {
+                 $(this).fadeIn();
+            })
+       })
+    });
+});
+</script>
+</body>
+</html>
